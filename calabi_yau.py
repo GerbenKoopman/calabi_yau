@@ -108,7 +108,9 @@ def plot_calabi_yau(elev, azim, alpha_deg):
 
     ax.view_init(elev=elev, azim=azim)
 
-    filename = f"calabi_yau_elev{int(elev)}_azim{int(azim)}_alpha{int(alpha_deg)}.png"
+    filename = (
+        f"images/calabi_yau_elev{int(elev)}_azim{int(azim)}_alpha{int(alpha_deg)}.png"
+    )
     plt.savefig(filename, dpi=100)
     plt.close()
 
